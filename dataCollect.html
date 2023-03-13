@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Updock&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+    <title>Data Collection</title>
+</head>
+
+<body class="data-page">
+
+    <div class="pre-match-page">
+        <div class="home-link">
+
+            <a class="homepage" href="index.html">Go Back</a>
+        </div>
+        <div class="title">CHARGED UP</div>
+        <div class="pre-match">PRE-MATCH</div>
+
+        <!--------------FORM----------------->
+        <div class="form-one">
+            <form  id="myForm"action="app.py" method="post">
+                <label for="sname">Scouter Initials:</label>
+                <input type="text" id="sname" name="sname"><br>
+                <br>
+                <label for="ename">Event:</label>
+                <label class="evname" for="evname">2023carv</label>
+
+                <br>
+                <!----------------------------->
+                <p>Match Level</p>
+                <input type="radio" id="quals" name="chosen" value="quals">
+                <label for="quals">Quals</label>
+                <br>
+                <input type="radio" id="d-elimination" name="chosen" value="d-elimination">
+                <label for="d-elimination">Double Elimination</label>
+                <br>
+                <input type="radio" id="final" name="chosen" value="final">
+                <label for="final">Finals</label>
+                <br>
+                <!----------------------------->
+                <p>Robots</p>
+                  <input type="radio" id="Red-1" name="chosen" value="Red-1">
+                  <label for="red">Red-1</label>
+                <input type="radio" id="Blue-1" name="chosen" value="Blue-1">
+                  <label for="red">Blue-1</label>
+
+                <br>
+                  <input type="radio" id="Red-2" name="chosen" value="Red-2">
+                  <label for="red">Red-2</label>
+                <input type="radio" id="Blue-2" name="chosen" value="Blue-2">
+                  <label for="red">Blue-2</label>
+                <br>
+                  <input type="radio" id="Red-3" name="chosen" value="Red-3">
+                  <label for="red">Red-3</label>
+                <input type="radio" id="Blue-3" name="chosen" value="Blue-3">
+                  <label for="red">Blue-3</label>
+
+                <br>
+                <br>
+                <!----------------------------->
+                <label for="match-number">Match-Number: </label>
+                <input type="text" id="manumber" name="match-number">
+                <br>
+                <br>
+                <label for="team-number">Team Number:
+                </label>
+                <input type="text" id="team-number" name="team-number">
+                <input type="submit" name="submit" onclick="submitForm()">
+            </form>
+
+        </div>
+
+        <script>
+        function submitForm() {
+            google.script.run.withSuccessHandler(function(response){
+                alert("Form submitted successfully");
+            }).processForm(document.getElementById("myForm"));
+        }
+        </script>
+    </div>
+
+
+
+</body>
+
+</html>

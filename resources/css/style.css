@@ -1,0 +1,121 @@
+header {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.50)), to(rgba(0, 0, 0, 0.50))), url(img/heroimg.avif);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url(img/heroimg.avif);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+    margin: -10px;
+}
+
+
+.welcome-text {
+    text-align: center;
+    font-size: 50px;
+    color: #fff;
+
+}
+
+.welcome-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    /*In order to make absolutely positioned we use this*/
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.options {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    /*In order to make absolutely positioned we use this*/
+    -webkit-transform: translate(-50%, -90%);
+    transform: translate(-50%, 140%);
+    text-align: center;
+    color: #fff;
+}
+
+
+.btn-one:link,
+.btn-one:visited,
+.btn-two:link,
+.btn-two:visited {
+    color: #787A91;
+    margin: 50px 50px 0px 20px;
+    color: #fff;
+    text-decoration: none;
+    /*text-transform: uppercase;*/
+    font-size: 110%;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+}
+
+.btn-one:hover,
+.btn-one:active,
+.btn-two:hover,
+.btn-two:active {
+    border-bottom: 2px solid #787A91;
+}
+
+/*---------- Data page------------------*/
+.pre-match-page {
+    height: 100vh;
+    background-color: #787A91;
+    margin: -10px;
+
+}
+
+.homepage:link,
+.homepage:visited {
+    color: #787A91;
+    margin: 50px 50px 0px 20px;
+    color: #EEEEEE;
+    text-decoration: none;
+    /*text-transform: uppercase;*/
+    font-size: 90%;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+}
+
+.homepage:hover,
+.homepage:active {
+    border-bottom: 2px solid #000;
+}
+
+.title {
+    color: #EEEEEE;
+    text-align: center;
+    font-size: 200%;
+    word-spacing: 5px;
+    /*not working*/
+    border: 2px solid #EEEEEE;
+    margin-top: 2%;
+}
+
+.pre-match {
+    color: #EEEEEE;
+    text-align: center;
+    font-size: 150%;
+    padding: 3%;
+}
+
+.evname {
+    border: 1px solid #fff;
+    padding: 1%;
+
+}
+
+form {
+    color: aliceblue;
+    margin-left: 15%;
+    padding-top: 2%;
+}
+
+.field-img-src {
+    margin-top: 2%;
+    margin-left: 15%;
+}
